@@ -1,0 +1,17 @@
+ Algorithm
+ 
+i.   Required header file <Servo.h> is included.
+     This library allows an Arduino board to control RC (hobby) servo motors. Servos have integrated gears and a shaft that can be precisely 
+     controlled. Standard servos allow the shaft to be positioned at various angles, usually between 0 and 180 degrees. Continuous rotation 
+     servos allow the rotation of the shaft to be set to various speeds.
+
+ii.  Initial position of servo motor is set to 0.
+
+iii. The first water sensor (waterSens) is connected to pin A0. The function of this water sensor is to open the inlet once it starts 
+     detecting water and close it once water can no longer be detected.
+
+iv.  The second sensor (waterSens2) is connected to pin A1.
+     The function of this sensor is to only close the inlet when it starts detecting water i.e., overflow condition. This sensor is ideally
+     placed inside the container, positioned at the edge.
+
+v.   Water level readings of the two sensors can be observed on the serial monitor.
